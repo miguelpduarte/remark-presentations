@@ -6,6 +6,14 @@ body {
     font-family: 'Droid Serif';
 }
 
+h1 {
+    background-color: var(--color-main);
+    color: white;
+    display: inline-block;
+    padding: 7px 10px 5px 10px;
+    border-radius: 10px;
+}
+
 h1,
 h2,
 h3 {
@@ -36,10 +44,20 @@ h3 {
     background-color: var(--color-highlighted-code);
 }
 
+.dev-pics img {
+    width: 60%;
+    height: 60%;
+}
+
+.small-images img {
+    width: 300px;
+    height: 300px;
+}
+
 img {
     display: block;
     margin: 5px auto;
-    border: 1px solid #272822;
+    /* border: 1px solid #272822; */
     padding: 10px;
     max-width: 90%;
 }
@@ -51,9 +69,9 @@ img {
     text-shadow: 0 0 20px #333;
 }
 
-.inverse h1,
-.inverse h2 {
-    color: var(--color-inverse-header);
+.inverse h1 {
+    background-color: transparent;
+    color: var(--color-main);
     line-height: 0.8em;
 }
 
@@ -87,4 +105,21 @@ li p {
 li {
     text-align: left;
     margin: 0 10px 10px 0;
+}
+
+/* Two-column layout */
+.left-column {
+    color: #777;
+    width: 50%;
+    float: left;
+}
+
+.left-column h2:last-of-type,
+.left-column h3:last-child {
+    color: #000;
+}
+
+.right-column {
+    width: 50%;
+    float: right;
 }
