@@ -19,89 +19,6 @@
   line-height: 0.8em;
 } */
 
-.box_info,
-.box_success,
-.box_warning,
-.box_error,
-.box_example,
-.box_regexp {
-    display: block;
-    margin: 10px 0px;
-    padding: 12px;
-    border-radius: .5em;
-}
-
-.box_info:before {
-    content: "\f05a";
-    padding-right: 1em;
-    font-family: FontAwesome;
-}
-
-.box_info {
-    color: #00529B;
-    background-color: #BDE5F8;
-}
-
-.box_regexp:before {
-    content: "\f002";
-    padding-right: 1em;
-    font-family: FontAwesome;
-}
-
-.box_regexp {
-    color: #00529B;
-    background-color: #BDE5F8;
-}
-
-.box_regexp strong {
-    color: red;
-    background-color: #DFF2BF;
-}
-
-.box_success:before {
-    content: "\f05d";
-    padding-right: 1em;
-    font-family: FontAwesome;
-}
-
-.box_success {
-    color: #4F8A10;
-    background-color: #DFF2BF;
-}
-
-.box_example:before {
-    content: "\f044";
-    padding-right: 1em;
-    font-family: FontAwesome;
-}
-
-.box_example {
-    color: #4F8A10;
-    background-color: #DFF2BF;
-}
-
-.box_warning:before {
-    content: "\f06a";
-    padding-right: 1em;
-    font-family: FontAwesome;
-}
-
-.box_warning {
-    color: #9F6000;
-    background-color: #FEEFB3;
-}
-
-.box_error:before {
-    content: "\f057";
-    padding-right: 1em;
-    font-family: FontAwesome;
-}
-
-.box_error {
-    color: #D8000C;
-    background-color: #FFBABA;
-}
-
 .indexlink {
   bottom: 12px;
   position: absolute;
@@ -119,11 +36,11 @@
 }
 
 .indexlink a {
-	color: #999;
-    padding-right: 1em;
+  color: #999;
+  padding-right: 1em;
 }
 
-table td{
+table td {
   padding: 0.5em;
   background-color: #373832;
   color: white;
@@ -147,6 +64,7 @@ blockquote {
   font-style: italic;
   border-radius: .5em;
 }
+
 blockquote:before {
   color: #aaa;
   content: open-quote;
@@ -155,20 +73,54 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
 }
 
-.relation table {border-collapse: collapse; font-size: 1em;}
-.relation table td { background-color: rgba(0,0,0,0); color: black; border: 1px solid black; padding: 10px 5px; }
-.relation.selected table td { color: red; }
-.relation table td:first-child { border: none; }
-.relation table td .pk { border-right: 1px solid black; padding: 10px 5px;}
+.relation table {
+  border-collapse: collapse;
+  font-size: 1em;
+}
 
-.sqltable table    { font-family: "Droid Sans Mono"; }
-.sqltable table td { background-color: white; color: black; border: 1px solid black; border-radius: 0;}
-.sqltable table th { background-color: #EEE; color: black; border: 1px solid black; border-radius: 0; text-align: center;}
+.relation table td {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border: 1px solid black;
+  padding: 10px 5px;
+}
 
+.relation.selected table td {
+  color: red;
+}
+
+.relation table td:first-child {
+  border: none;
+}
+
+.relation table td .pk {
+  border-right: 1px solid black;
+  padding: 10px 5px;
+}
+
+.sqltable table {
+  font-family: "Droid Sans Mono";
+}
+
+.sqltable table td {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.sqltable table th {
+  background-color: #EEE;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0;
+  text-align: center;
+}
 
 .simple table {
   border-collapse: collapse;
@@ -180,20 +132,39 @@ blockquote p {
   border-bottom: 1px solid black;
   padding: 0.5em;
 }
-.simple table td { color: black}
-.simple table td { background-color: white}
 
-.selected { color: red }
-.key {text-decoration: underline}
-.small {font-size: .8em}
-.smaller {font-size: .5em}
+.simple table td {
+  color: black
+}
+
+.simple table td {
+  background-color: white
+}
+
+.selected {
+  color: red
+}
+
+.key {
+  text-decoration: underline
+}
+
+.small,
+.small code {
+  font-size: .8em
+}
+
+.smaller,
+.smaller code {
+  font-size: .5em
+}
 
 del {
   color: red;
 }
 
-.code {
-  display: inline-block;
+code {
+  display: inline-block !important;
   font-family: monospace;
   font-size: .8em;
   background-color: gray;
@@ -220,23 +191,4 @@ del {
 .centered {
   margin: 0 auto;
   display: table;
-}
-
-/* Two-column layout */
-.left-column {
-  color: #777;
-  width: 20%;
-  height: 92%;
-  float: left;
-}
-
-.left-column h2:last-of-type,
-.left-column h3:last-child {
-  color: #000;
-}
-
-.right-column {
-  width: 50%;
-  float: right;
-  padding-top: 1em;
 }
